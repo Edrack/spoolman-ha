@@ -8,7 +8,7 @@ arch:
   - amd64
   - armv7
 startup: application
-# webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
+webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
 environment:
   "SPOOLMAN_DIR_DATA": "/data"
   "PUID": "0"
@@ -16,8 +16,8 @@ environment:
   "SPOOLMAN_DB_TYPE": "sqlite"
   "SPOOLMAN_AUTOMATIC_BACKUP": "false"
 boot: auto
-# ports:
-#   8000/tcp: 8000
+ports:
+  8000/tcp: 8000
 image: ghcr.io/donkie/spoolman
 version: 0.16.1
 ingress: true

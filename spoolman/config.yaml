@@ -18,4 +18,3 @@ ports:
   8000/tcp: 8000
 image: ghcr.io/donkie/spoolman
 version: 0.16.1
-watchdog: http://[HOST]:[PORT:8000]/
